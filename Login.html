@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ITME</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <!-- <meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/flaticon-set.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/tg-cursor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/My_style.css">
+
+    <style type="text/css">
+        .Login_page {
+            background-color: #0A0E14;
+            padding: 90px 0;
+            position: relative;
+            background-image: none;
+            transition: none;
+            height: 100vh;
+        }
+        .Login_page::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/img/map_img_11.png);
+            opacity: 0.05;
+            border-radius: 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+            background-position: 0% 0%;
+            opacity: 0.1;
+        }
+        .Login_page .container{
+            position: relative;
+            z-index: 1;
+        }
+        .login_main_div{
+            width: 30%;
+            margin: 0 auto;
+        }
+        .login_main_div .login-wrap .logo_img_css {
+            max-height: 75px;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+        .login_main_div .login-wrap {
+          position: relative;
+          border: 1px solid #3A3B3D;
+          background: #11171F;
+          border-radius: 5px;
+          box-shadow: 3px 3px 10px #333;
+          padding: 35px;
+        }
+        .login-wrap h2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 2em;
+            margin-top: 10px;
+            color: #efefef;
+        }
+        .login-wrap .form {
+          padding-top: 20px;
+        }
+        .login-wrap .form input[type="text"],
+        .login-wrap .form input[type="password"],
+        .login-wrap .form button {
+          width: 100%;
+          margin-left: 0%;
+          margin-bottom: 25px;
+          height: 45px;
+          border-radius: 5px;
+          outline: 0;
+          -moz-outline-style: none;
+        }
+        .login-wrap .form input[type="text"],
+        .login-wrap .form input[type="password"] {
+          border: 1px solid #bbb;
+          padding: 15px;
+          font-size: 14px;
+          border-radius: 0px;
+        }
+        .login-wrap .form input[type="text"]:focus,
+        .login-wrap .form input[type="password"]:focus {
+          border: 1px solid #3498db;
+        }
+        .login-wrap .form a {
+          text-align: center;
+          font-size: 10px;
+          color: #3498db;
+        }
+        .login-wrap .form a p {
+          padding-bottom: 10px;
+        }
+        .login-wrap .form button {
+            background: #FFA200;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 200;
+            cursor: pointer;
+            transition: box-shadow .4s ease;
+            text-transform: uppercase;
+            border-radius: 0;
+            margin-bottom: 0px;
+        }
+        .login-wrap .form button:hover {
+          box-shadow: 1px 1px 5px #555;
+        }
+        .login-wrap .form button:active {
+          box-shadow: 1px 1px 7px #222;
+        }
+
+        .Login_cont_div {
+            border: 1px solid #3A3B3D;
+            background: #11171F;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .Login_cont_div h5{
+
+        }
+        .Login_cont_div p{
+            margin-bottom: 0px;
+        }
+        .Organizer_login_div{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .Organizer_login_div a{
+            background: #FFA200;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        @media(max-width:768px){
+            .login_main_div {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+
+        @media(max-width:480px){
+            .login_main_div {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="loader-icon"><img src="assets/img/logo/preloader.png" alt="Preloader"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+
+
+    <!-- main-area -->
+    <main class="main-area">
+        <section class="Login_page">
+          <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-12 col-sm-12">
+                    <div class="login_main_div">
+                        <div class="login-wrap">
+                            <img src="assets/img/logo_2.png" class="logo_img_css" />
+                            <h2>Login</h2>
+                            <div class="form">
+                                <input type="text" placeholder="Username" name="un" />
+                                <input type="password" placeholder="Password" name="pw" />
+                                <button> Sign in </button>
+                            </div>
+                        </div>
+
+                        <div class="Login_cont_div">
+                            <h5>08th – 13th December 2022</h5>
+                            <p>India Exposition Mart Limited, Plot No. 25,27,28,29, Greater Noida, India</p>
+                        </div>
+
+                        <div class="Organizer_login_div">
+                            <a href="#" class="read_more_btn">Organizer Login</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+              
+            </div>
+          </div>
+        </section>
+
+  
+ 
+    </main>
+   
+
+
+
+
+
+
+    <!-- JS here -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/tg-cursor.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/tween-max.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/scrollable_tab.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+   
+
+</body>
+
+</html>
