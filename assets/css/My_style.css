@@ -1,3 +1,22 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*-----------------------------------------------------*/
 .yellow_color{
 	color: #FFA800;
 }
@@ -6,6 +25,12 @@
 }
 .mb_5{
 	margin-bottom: 5px;
+}
+.mb_10{
+    margin-bottom: 10px !important;
+}
+.mb_15{
+    margin-bottom: 15px !important;
 }
 .mt_10{
     margin-top: 10px;
