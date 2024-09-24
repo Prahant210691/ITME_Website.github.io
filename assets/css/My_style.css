@@ -937,6 +937,12 @@
     border-radius: 5px;
     padding: 10px 15px;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) { 
+    .Invite_main_div .d-flex.align-items-center{
+        width: 38%;
+    }
+}
+
 
 .Invite_main_div .d-flex.align-items-center .date_section{
 	text-align: left;
@@ -1081,6 +1087,7 @@
 .footer__area{
     position: relative;
 	background-color: #2B2B2B;
+    border-top: 1px solid var(--tg-theme-primary);
 }
 
 .footer__area::before{

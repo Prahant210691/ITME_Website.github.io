@@ -58,7 +58,8 @@
   --tg-body-font-size: 16px;
   --tg-body-line-height: 1.62;
   --tg-heading-line-height: 1.2;
-  --tg-body-color: #74787C;
+  /* --tg-body-color: #74787C; */
+  --tg-body-color: #d9d9d9;
 /*  --tg-heading-color: #121212;*/
   --tg-heading-color: #fff;
   --tg-theme-primary: #F66300;
