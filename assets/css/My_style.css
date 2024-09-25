@@ -91,30 +91,13 @@
     margin-bottom: 0px;
 }
 @media(max-width:768px){
-    .grid_view_head{
-        position: relative;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 1rem;
-        padding: 20px 0px;
-    }
-    .grid_view_head .grid_div{
-        padding: 10px;
-        border-radius: 5px;
-    }
     .custom_dialog {
         max-width: 95% !important;
         width: 95% !important;
     }
 }
 @media(max-width:480px){
-    .grid_view_head{
-        position: relative;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid_view_head .grid_div{
-        padding: 10px;
-        border-radius: 5px;
-    }
+    
     .custom_dialog {
         max-width: 95% !important;
         width: 95% !important;

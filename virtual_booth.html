@@ -34,23 +34,31 @@
         .link_div{
             color: #FFA800 !important;
         }
-        .grid_view_head{
+        .virtual_links_div .grid_view_head{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            column-gap: 1rem;
+            column-gap: 0.5rem;
             width: 100%;
             margin: 0 auto;
-            margin-top: 40px;
-            position: fixed;
+            margin-top: 0px;
+            position: relative;
             bottom: 28px;
             left: 0;
-            padding: 20px 20px;
+            padding: 20px 0px;
+            text-align: center;
         }
-        .grid_view_head .grid_div img {
+        .virtual_links_div .grid_view_head .grid_div{
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+        .virtual_links_div .grid_view_head .grid_div:hover{
+            background-image: linear-gradient(to bottom right, #fff5e2, #ffa800);
+        }
+        .virtual_links_div .grid_view_head .grid_div img {
             width: 50px;
             margin-bottom: 15px;
         }
-        .grid_view_head .grid_div h6 {
+        .virtual_links_div .grid_view_head .grid_div h6 {
             font-size: 15px;
             font-weight: 500;
             margin-bottom: 0;
@@ -129,7 +137,28 @@
             padding: 5px 20px;
         }
         
-
+        @media(max-width:768px){
+            .virtual_links_div .grid_view_head{
+                position: relative;
+                grid-template-columns: repeat(4, 1fr);
+                row-gap: 1rem;
+                padding: 20px 0px;
+            }
+            .virtual_links_div .grid_view_head .grid_div{
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+        @media(max-width:480px){
+            .virtual_links_div .grid_view_head{
+                position: relative;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .virtual_links_div .grid_view_head .grid_div{
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
     </style>
 
 </head>
@@ -166,51 +195,7 @@
                             <div class="col-xl-12 col-lg-12">
                                 <div class="slider__content-two header_text">
                                 
-                                    <div class="grid_view_head">
-                                        <a href="index.html">
-                                            <div class="grid_div">
-                                                <img src="assets/img/Website_img.png"/>
-                                                <h6>ITME 2022 Website</h6>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ForExhibitors">
-                                            <div class="grid_div">
-                                                <img src="assets/img/Exhibitors_img.png"/>
-                                                <h6>For Exhibitors</h6>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ForVisitors">
-                                            <div class="grid_div">
-                                                <img src="assets/img/ForVisitors_img.png"/>
-                                                <h6>For Visitors</h6>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)">
-                                            <div class="grid_div">
-                                                <img src="assets/img/ChatSupport_img.png"/>
-                                                <h6>Chat Support</h6>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#EventDatesModal">
-                                            <div class="grid_div">
-                                                <img src="assets/img/EventDates_img.png"/>
-                                                <h6>Dates</h6>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#VenueModal">
-                                            <div class="grid_div">
-                                                <img src="assets/img/Venue_imgs.png"/>
-                                                <h6>Venue</h6>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#HowtoreachModal">
-                                            <div class="grid_div">
-                                                <img src="assets/img/HowtoReach_img.png"/>
-                                                <h6>How to Reach</h6>
-                                            </div>
-                                        </a>
-                                   
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -228,6 +213,59 @@
         <div class="about-area section-pt-90">
             <img src="assets/img/bg_img.png" class="bg_imgs" />
             <div class="container section-pb-90">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="virtual_links_div">
+                            <div class="grid_view_head">
+                                <a href="index.html">
+                                    <div class="grid_div">
+                                        <img src="assets/img/Website_img.png"/>
+                                        <h6>ITME 2022 Website</h6>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ForExhibitors">
+                                    <div class="grid_div">
+                                        <img src="assets/img/Exhibitors_img.png"/>
+                                        <h6>For Exhibitors</h6>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ForVisitors">
+                                    <div class="grid_div">
+                                        <img src="assets/img/ForVisitors_img.png"/>
+                                        <h6>For Visitors</h6>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <div class="grid_div">
+                                        <img src="assets/img/ChatSupport_img.png"/>
+                                        <h6>Chat Support</h6>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#EventDatesModal">
+                                    <div class="grid_div">
+                                        <img src="assets/img/EventDates_img.png"/>
+                                        <h6>Dates</h6>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#VenueModal">
+                                    <div class="grid_div">
+                                        <img src="assets/img/Venue_imgs.png"/>
+                                        <h6>Venue</h6>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#HowtoreachModal">
+                                    <div class="grid_div">
+                                        <img src="assets/img/HowtoReach_img.png"/>
+                                        <h6>How to Reach</h6>
+                                    </div>
+                                </a>
+                           
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-md-12 virtual_booth_main_div">
