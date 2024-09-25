@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="assets/css/My_style.css">
 
     <style type="text/css">
+        .link_div{
+            color: #FFA800 !important;
+        }
         .grid_view_head{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
@@ -125,115 +128,8 @@
         .view_btn_div .read_more_btn{
             padding: 5px 20px;
         }
-        .custom_dialog{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) !important;
-            max-width: 800px !important;
-            width: 800px !important;
-            z-index: 1;
-            border-radius: 0px;
+        
 
-        }
-        .custom_dialog .modal-content{
-            border-radius: 0px;
-            font-size: 16px;
-            background: #2d2d2d;
-            border: 1px solid #2d2d2d;
-            box-shadow: 0px 0px 10px 4px #ffffff24;
-            text-transform: capitalize;
-
-        }
-        .custom_dialog .modal-header{
-            border-bottom: 2px solid #3e3e3e;
-        }
-        .custom_dialog .modal-header .modal-title{
-            color: #fff;
-            font-size: 17px;
-            text-transform: capitalize;
-            letter-spacing: 1px;
-        }
-        .custom_dialog .modal-header .btn-close{
-            font-size: 14px;
-            background-color: #6b6b6b;
-        }
-        .custom_dialog .modal-body{
-            min-height: 300px;
-            max-height: 500px;
-            overflow: auto;
-        }
-        .custom_dialog .modal-body .modal_content_div{
-            margin-bottom: 0px;
-            padding: 15px 0px;
-            border-bottom: 1px solid #3f3f3f;
-        }
-        .custom_dialog .modal-body .modal_content_div h6{
-            text-transform: capitalize;
-            color: #FFA800;
-            margin-bottom: 5px;
-        }
-        .custom_dialog .modal-body .modal_content_div a{
-            color: #fff;
-            font-size: 14px;
-        }
-        .custom_dialog .modal-body .modal_content_div p a{
-            color: #FFA800;
-        }
-        .custom_dialog .modal-body .modal_content_div p{
-            color: #fff;
-            font-size: 14px;
-            margin-bottom: 0px;
-        }
-        .modal_content_div:last-child{
-            margin-bottom: 0px !important;
-            border-bottom: none !important;
-        }
-        .modal_content_div .custom_table .table>:not(caption)>*>*{
-            font-size: 14px;
-            font-weight: 400;
-            vertical-align: middle;
-        }
-        .modal_content_div .custom_table .table{
-            margin-bottom: 0px;
-        }
-        @media(max-width:768px){
-            .grid_view_head{
-                position: relative;
-                grid-template-columns: repeat(4, 1fr);
-                row-gap: 1rem;
-                padding: 20px 0px;
-            }
-            .grid_view_head .grid_div{
-                padding: 10px;
-                border-radius: 5px;
-            }
-            .custom_dialog {
-                max-width: 95% !important;
-                width: 95% !important;
-            }
-        }
-        @media(max-width:480px){
-            .grid_view_head{
-                position: relative;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .grid_view_head .grid_div{
-                padding: 10px;
-                border-radius: 5px;
-            }
-            .custom_dialog {
-                max-width: 95% !important;
-                width: 95% !important;
-                margin: 0;
-            }
-            .custom_dialog .modal-body {
-                min-height: 300px;
-                max-height: 600px;
-                overflow: auto;
-            }
-        }
-       
     </style>
 
 </head>
@@ -537,7 +433,7 @@
                                             <tr>
                                               <td rowspan="2">Day 2</td>
                                               <td rowspan="2">Fri, 9-12-2022</td>
-                                              <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#CircularEconomy">Session - Circular Economy in the Indian Context</a></td>
+                                              <td><a href="javascript:void(0)" class="link_div" data-bs-toggle="modal" data-bs-target="#CircularEconomy">Session - Circular Economy in the Indian Context</a></td>
                                             </tr>
                                             <tr>
                                               <td>Exhibition & B2B Meetings</td>
@@ -562,7 +458,7 @@
                                               <td>Alumni Meet & Technical Symposium on of 'Reduce-Reuse-Recycle: State of the Art' in Textile Sector by VJIT</td>
                                             </tr>
                                             <tr>
-                                              <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Customised" data-bs-dismiss="modal">Session - Composites for the Energy Sector in India</a></td>
+                                              <td><a href="javascript:void(0)" class="link_div" data-bs-toggle="modal" data-bs-target="#CustomisedJoiningTech">Session - Composites for the Energy Sector in India</a></td>
                                             </tr>
                                             <tr>
                                               <td>Exhibition & B2B Meetings</td>
@@ -570,7 +466,7 @@
                                             <tr>
                                               <td rowspan="3">Day 5</td>
                                               <td rowspan="3">Mon, 12-12-2022</td>
-                                              <td><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Customised">Session - Customised Joining Technologies for Technical Textiles</a></td>
+                                              <td><a href="javascript:void(0)" class="link_div" data-bs-toggle="modal" data-bs-target="#CustomisedJoiningTech">Session - Customised Joining Technologies for Technical Textiles</a></td>
                                             </tr>
                                             <tr>
                                               <td>Farewell Dinner (By Invitation only </td>
@@ -738,7 +634,6 @@
             </div>
         </div>
     </div>
-    
 
     <div class="modal" id="VenueModal" data-bs-keyboard="false" data-bs-backdrop="static">
         <div class="modal-dialog custom_dialog" >
@@ -771,8 +666,6 @@
             </div>
         </div>
     </div>
-
-    
 
     <div class="modal" id="HowtoreachModal" data-bs-keyboard="false" data-bs-backdrop="static">
         <div class="modal-dialog custom_dialog" >
@@ -830,7 +723,136 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="modal" id="CircularEconomy" data-bs-keyboard="false" data-bs-backdrop="static">
+        <div class="modal-dialog custom_dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Session - Circular Economy in the Indian Context</h4>
+                    <button type="button" class="btn-close CircularEconomy_close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="custom_table">
+                                <div class="hack1">
+                                  <div class="hack2">
+                                    <table class="table table-striped table-bordered table-dark mg-b-0">
+                                      <thead>
+                                        <tr>
+                                          <th colspan="3" class="text-center">Moderator Prof. Thomas Gries</th>
+                                        </tr>
+                                        <tr>
+                                          <th style="width: 15%;">Time</th>
+                                          <th>Topic</th>
+                                          <th style="width: 15%;">Speaker</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody id="myTable">
+                                        <tr>
+                                          <td>2:00 PM</td>
+                                          <td>Global Perspective on Circular Economy</td>
+                                          <td>Thomas Gries</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3:00 PM</td>
+                                            <td>BiotexFuture</td>
+                                            <td>Uday Gill</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3:30 PM</td>
+                                            <td>Responsibility Code for Textile Brands with regard to Circularity</td>
+                                            <td>Praveen Agrawal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4:00 PM</td>
+                                            <td>Circularity in the traditional textile sectors</td>
+                                            <td>Justin Kühn</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4:30 PM</td>
+                                            <td>Circularity in Textile Processing</td>
+                                            <td>Gurudas Aras</td>
+                                        </tr>
+                                        
+                                        
+                                      
+                                      </tbody>
+                                    </table>
+
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="CustomisedJoiningTech" data-bs-keyboard="false" data-bs-backdrop="static">
+        <div class="modal-dialog custom_dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Session - Composites for the Energy Sector in India</h4>
+                    <button type="button" class="btn-close CircularEconomy_close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="custom_table">
+                                <div class="hack1">
+                                  <div class="hack2">
+                                    <table class="table table-striped table-bordered table-dark mg-b-0">
+                                      <thead>
+                                        <tr>
+                                          <th colspan="3" class="text-center">Moderator Dr.-Ing. Yves Simon Gloy</th>
+                                        </tr>
+                                        <tr>
+                                          <th style="width: 15%;">Time</th>
+                                          <th>Topic</th>
+                                          <th style="width: 15%;">Speaker</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody id="myTable">
+                                        <tr>
+                                          <td>2:00 PM</td>
+                                          <td>Microfactories for the textile production of lot size 1</td>
+                                          <td>Yves Simon Gloy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3:00 PM</td>
+                                            <td>Joining technologies for the defence sector</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3:30 PM</td>
+                                            <td>Future of Joining Technologies</td>
+                                            <td>Philip Huber</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4:00 PM</td>
+                                            <td>Needs of the defence sector for joining technologies in textiles</td>
+                                            <td></td>
+                                        </tr>
+                                      
+                                      </tbody>
+                                    </table>
+
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <footer class="footer__area">
         <div class="container">
             <div class="footer__top">
@@ -1030,7 +1052,12 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-
+    <script type="text/javascript">
+        $(".CircularEconomy_close").click(function() {
+            $("#ForVisitors").modal('show');
+            $("#CircularEconomy").modal('hide');
+        });
+    </script>
 
   
 </body>

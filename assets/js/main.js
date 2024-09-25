@@ -770,5 +770,10 @@ if ($(".curved-circle").length) {
     });
 }
 });
+// -----------------------------------------------------
+$(".modal").on('shown.bs.modal', function() {
+  // $('.modal-backdrop').css('background', '#000000');
+  $('.modal-backdrop').addClass('modal_bg_color');
+});
 
 })(jQuery);
