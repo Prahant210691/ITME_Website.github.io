@@ -498,7 +498,8 @@
 .partners_section{
     /*background-color: #0A0E14;*/
     /*    background-color: #4d4e50;*/
-    background-color: #323334;
+    /*    background-color: #323334;*/
+    background-color: #3a3a3a;
 }
 .partners_section::before{
 	content: '' !important;
@@ -884,7 +885,8 @@
 .gallary_testimonial_section{
 	position: relative;
     /*    background-color: #0A0E14;*/
-    background-color: #323334;
+    /*    background-color: #323334;*/
+    background-color: #3a3a3a;
 }
 .gallary_testimonial_section::before{
 	content: '' !important;
@@ -995,8 +997,9 @@
 	color: #fff;
 }
 .testimonal_card .card-footer{
-/*	background: #242424;*/
-    background: #323334;
+    /*	background: #242424;*/
+    /*    background: #323334;*/
+    background: #3a3a3a;
 }
 .testimonal_card .card-footer img{
     width: 66px;
