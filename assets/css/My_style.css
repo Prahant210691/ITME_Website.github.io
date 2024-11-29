@@ -2110,6 +2110,71 @@
     padding: 90px 0;
 }
 .PastEvents_grid_View{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.PastEvents_grid_View .main_div{
+    border:1px solid #3A3B3D;
+    background: #11171F;
+    padding: 25px;
+    border-radius: 5px;
+}
+.PastEvents_grid_View .main_div img{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.PastEvents_grid_View .main_div .content_div{
+    text-align: center;
+}
+.PastEvents_grid_View .main_div .content_div .btn_div a{
+    font-size: 14px;
+    width: 150px;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: #3A3B3D;
+    color: #c9c9c9;
+}
+.PastEvents_grid_View .main_div .content_div .btn_div a:hover{
+    background-color: #f66300;
+    border-color: #3A3B3D;
+    color: #fff;
+}
+.PastEvents_grid_View .main_div .content_div h3{
+    color: #FFA800;
+    text-transform: capitalize;
+}
+.PastEvents_grid_View .main_div .content_div p{
+    margin-bottom: 15px;
+}
+.PastEvents_grid_View .main_div .content_div a.read_more_btn{
+    border: 1px solid #FFA200;
+    color: #000;
+    padding: 6px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    display: inline-block;
+    width: 109px;
+    background: #FFA200;
+}
+
+/*.Past_Events_section{
+    background-color: #0A0E14;
+    padding: 90px 0;
+}
+.PastEvents_grid_View{
     margin-bottom: 15px;
 }
 .PastEvents_grid_View .main_div{
@@ -2145,7 +2210,8 @@
 }
 .PastEvents_grid_View .main_div .content_div a{
     color: #ffa902;
-}
+}*/
+
 /*----------------------------------------------------------------*/
 .Shuttle_Bus_Service_section{
     background-color: #0A0E14;
@@ -2167,6 +2233,10 @@
     background-size: cover;
     z-index: 0;
     background-position: 0% 0%;
+}
+.Shuttle_Bus_Service_section .container{
+    position: relative;
+    z-index: 1;
 }
 .Shuttle_Bus_Service_section .title_txt{
     text-transform: capitalize;
@@ -2424,7 +2494,8 @@
     color: #fff;
     border: 1px solid #343a40;
     padding: 10px 10px;
-    width: 130px;
+    width: auto;
+    min-width: 130px;
     border-radius: 5px;
     font-weight: 500;
 }
@@ -2641,7 +2712,7 @@
 }
 .galllary_img_div img{
     width: 100%;
-    height: 300px;
+    height: 200px;
     border-radius: 3px;
     object-fit: cover;
 }
@@ -2673,6 +2744,10 @@
     display: block;
 }
 /*---------------------------------------------------------------*/
+.magnific-img{
+    display: inline-grid;
+    grid-template-columns: ;
+}
 
 /*---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
@@ -3181,7 +3256,7 @@
     .GoodwillMessages_grid_View .main_div{
         padding: 15px;
     }
-/*    -----------------------------------------------------------*/
+    /*    -----------------------------------------------------------*/
     .PastEvents_grid_View .main_div{
         column-gap: 1rem;
         padding: 10px;
