@@ -931,6 +931,7 @@
 }
 .gallary_section .project__item img{
     border-radius: 10px;
+    height: 206px;
 }
 .gallary_section::before {
     content: "";
