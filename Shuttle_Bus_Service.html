@@ -33,7 +33,9 @@
     <link rel="stylesheet" href="assets/css/My_style.css">
 
     <style type="text/css">
-        
+        .box{
+            display: none;
+        }
 
     </style>
 </head>
@@ -375,11 +377,11 @@
            
        </div>
        
-       <section class="Shuttle_Bus_Service_section">
+       <section class="Shuttle_Bus_Service_section for_coming_soon" style="height:100vh">
 
             <div class="container">
                 <div class="row" data-aos="fade-up" data-aos-delay="300">
-                   <div class="col-md-12 text-left" >
+                   <div class="col-md-12 text-center" >
                         <h4 class="border_title">Bus Service</h4>
                         <div class="selector">
                             <h2 class="ah-headline letters rotate-3">
@@ -391,7 +393,7 @@
                 </div>
                 
 
-                <div class="row" data-aos="fade-up" data-aos-delay="500">
+                <!-- <div class="row" data-aos="fade-up" data-aos-delay="500">
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-12">
@@ -534,10 +536,6 @@
                     </div>
                 </div>
 
-
-
-
-                
                 
                 <div class="ImportantNote_div" data-aos="fade-up" data-aos-delay="700">
                     <div class="row">
@@ -581,6 +579,11 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="field-wrap">
+                                                                <input type="text" name="your-name" class="input-field" placeholder="Booth No*" maxlength="70" required="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field-wrap">
                                                                 <input type="text" name="phone" class="input-field" placeholder="Contact Person" minlength="10" maxlength="25" required="" />
                                                             </div>
                                                         </div>
@@ -594,44 +597,259 @@
                                                                 <input type="email" name="business-email" class="input-field" placeholder="Email ID" required="" />
                                                             </div>
                                                         </div>
-
-                                                        <div class="col-md-12">
-                                                            <h6 class="select_trip">Please Select Your Trip</h6>
-
-                                                            <div class="input-group">
-                                                                <div class="form-group">
-                                                                    <input class="custom-radio" type="radio" id="radio_1" name="my-radio" value="1" checked>
-                                                                    <label for="radio_1">
-                                                                        <span></span> Arrival at IEML
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input class="custom-radio" type="radio" id="radio_2" name="my-radio" value="1">
-                                                                    <label for="radio_2">
-                                                                        <span></span> Departure From IEML
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input class="custom-radio" type="radio" id="radio_3" name="my-radio" value="1">
-                                                                    <label for="radio_3">
-                                                                    <span></span> Round Trip
-                                                                  </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                       
-                                                        <div class="col-md-12 mt_15">
-                                                            <div class="field-wrap submitbtn">
-                                                                <button type="submit" class="contact_us_btn">Submit</button>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="Visitor" role="tabpanel">
                                                   <div class="row">
-                                                    <div class="col-md-12">Hindi_Language</div>
+                                                    <div class="col-md-6">
+                                                        <div class="field-wrap">
+                                                            <input type="text" name="your-name" class="input-field" placeholder="company Name*" maxlength="70" required="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="field-wrap">
+                                                            <input type="text" name="phone" class="input-field" placeholder="Contact Person" minlength="10" maxlength="25" required="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="field-wrap">
+                                                            <input type="text" name="business-email" class="input-field" placeholder="Mobile No." required="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="field-wrap">
+                                                            <input type="email" name="business-email" class="input-field" placeholder="Email ID" required="" />
+                                                        </div>
+                                                    </div>
                                                   </div>
                                                 </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h6 class="select_trip">Please Select Your Trip</h6>
+
+                                                        <div class="input-group">
+                                                            <div class="form-group">
+                                                                <input class="custom-radio" type="radio" id="radio_1" name="my_radio" value="Arrival_at_IEML" checked>
+                                                                <label for="radio_1">
+                                                                    <span></span> Arrival at IEML
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="custom-radio" type="radio" id="radio_2" name="my_radio" value="Departure_From_IEML">
+                                                                <label for="radio_2">
+                                                                    <span></span> Departure From IEML
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="custom-radio" type="radio" id="radio_3" name="my_radio" value="Round_Trip">
+                                                                <label for="radio_3">
+                                                                <span></span> Round Trip
+                                                              </label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="radiio_divs">
+                                                            <div class="Arrival_at_IEML box">
+
+                                                                <fieldset class="scheduler-border">
+                                                                    <legend class="scheduler-border">Arrival at IEML</legend>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                
+                                                                                <input type="date" name="your-date" class="input-field" placeholder="Select Date" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="time" name="your-time" class="input-field" placeholder="Select Time*" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="text" name="your-seat" class="input-field" placeholder="No. of Seat" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <select class="input-field">
+                                                                                    <option value="">Select Pickup Point</option>
+                                                                                    <option value="New Delhi Domestic Airport">New Delhi Domestic Airport</option>
+                                                                                    <option value="New Delhi International Airport">New Delhi International Airport</option>
+                                                                                    <option value="New Delhi Railway Station">New Delhi Railway Station</option>
+                                                                                    <option value="Hazrat Nizamuddin railway station">Hazrat Nizamuddin railway station</option>
+                                                                                    <option value="Botanical Garden Metro Station">Botanical Garden Metro Station</option>
+                                                                                    <option value="Knowledge Park Metro Station">Knowledge Park Metro Station</option>
+                                                                                    <option value="Nasa Parking">Nasa Parking</option>
+                                                                                    <option value="Exhibition Venue">Exhibition Venue</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="field-wrap">
+                                                                                <textarea class="input-field" placeholder="Remark" rows="3"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6"></div>
+                                                                    </div>
+                                                                  
+                                                                </fieldset>
+
+
+                                                            </div>
+                                                            <div class="Departure_From_IEML box">
+                                                                <fieldset class="scheduler-border">
+                                                                    <legend class="scheduler-border">Departure From IEML</legend>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                
+                                                                                <input type="date" name="your-date" class="input-field" placeholder="Select Date" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="time" name="your-time" class="input-field" placeholder="Select Time*" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="text" name="your-seat" class="input-field" placeholder="No. of Seat" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <select class="input-field">
+                                                                                    <option value="">Select Drop Point</option>
+                                                                                    <option value="New Delhi Domestic Airport">New Delhi Domestic Airport</option>
+                                                                                    <option value="New Delhi International Airport">New Delhi International Airport</option>
+                                                                                    <option value="New Delhi Railway Station">New Delhi Railway Station</option>
+                                                                                    <option value="Hazrat Nizamuddin railway station">Hazrat Nizamuddin railway station</option>
+                                                                                    <option value="Botanical Garden Metro Station">Botanical Garden Metro Station</option>
+                                                                                    <option value="Knowledge Park Metro Station">Knowledge Park Metro Station</option>
+                                                                                    <option value="Nasa Parking">Nasa Parking</option>
+                                                                                    <option value="Exhibition Venue">Exhibition Venue</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="field-wrap">
+                                                                                <textarea class="input-field" placeholder="Remark" rows="3"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6"></div>
+                                                                    </div>
+                                                                  
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="Round_Trip box">
+                                                                <fieldset class="scheduler-border">
+                                                                    <legend class="scheduler-border">Arrival at IEML</legend>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                
+                                                                                <input type="date" name="your-date" class="input-field" placeholder="Select Date" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="time" name="your-time" class="input-field" placeholder="Select Time*" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="text" name="your-seat" class="input-field" placeholder="No. of Seat" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <select class="input-field">
+                                                                                    <option value="">Select Pickup Point</option>
+                                                                                    <option value="New Delhi Domestic Airport">New Delhi Domestic Airport</option>
+                                                                                    <option value="New Delhi International Airport">New Delhi International Airport</option>
+                                                                                    <option value="New Delhi Railway Station">New Delhi Railway Station</option>
+                                                                                    <option value="Hazrat Nizamuddin railway station">Hazrat Nizamuddin railway station</option>
+                                                                                    <option value="Botanical Garden Metro Station">Botanical Garden Metro Station</option>
+                                                                                    <option value="Knowledge Park Metro Station">Knowledge Park Metro Station</option>
+                                                                                    <option value="Nasa Parking">Nasa Parking</option>
+                                                                                    <option value="Exhibition Venue">Exhibition Venue</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="field-wrap">
+                                                                                <textarea class="input-field" placeholder="Remark" rows="3"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6"></div>
+                                                                    </div>
+                                                                  
+                                                                </fieldset>
+
+                                                                <fieldset class="scheduler-border">
+                                                                    <legend class="scheduler-border">Departure From IEML</legend>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                
+                                                                                <input type="date" name="your-date" class="input-field" placeholder="Select Date" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="time" name="your-time" class="input-field" placeholder="Select Time*" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <input type="text" name="your-seat" class="input-field" placeholder="No. of Seat" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="field-wrap">
+                                                                                <select class="input-field">
+                                                                                    <option value="">Select Drop Point</option>
+                                                                                    <option value="New Delhi Domestic Airport">New Delhi Domestic Airport</option>
+                                                                                    <option value="New Delhi International Airport">New Delhi International Airport</option>
+                                                                                    <option value="New Delhi Railway Station">New Delhi Railway Station</option>
+                                                                                    <option value="Hazrat Nizamuddin railway station">Hazrat Nizamuddin railway station</option>
+                                                                                    <option value="Botanical Garden Metro Station">Botanical Garden Metro Station</option>
+                                                                                    <option value="Knowledge Park Metro Station">Knowledge Park Metro Station</option>
+                                                                                    <option value="Nasa Parking">Nasa Parking</option>
+                                                                                    <option value="Exhibition Venue">Exhibition Venue</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="field-wrap">
+                                                                                <textarea class="input-field" placeholder="Remark" rows="3"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6"></div>
+                                                                    </div>
+                                                                  
+                                                                </fieldset>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                   
+                                                    <div class="col-md-12 mt_15">
+                                                        <div class="field-wrap submitbtn">
+                                                            <button type="submit" class="contact_us_btn">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
                                                
                                             </div>
                                           </div>
@@ -646,7 +864,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
 
             </div>
@@ -891,6 +1109,20 @@
     });
 
 
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".Arrival_at_IEML").show();
+        $(".Departure_from_IEML").hide();
+        $(".Departure_from_IEML").hide();
+
+        $('input[type="radio"]').click(function(){
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".box").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
 </script>
 
 </body>

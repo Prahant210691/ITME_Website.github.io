@@ -2304,10 +2304,10 @@
     padding: 35px;
     margin-left: 40px;
 }
-.ImportantNote_div .field-wrap input, .ImportantNote_div .field-wrap textarea {
+.ImportantNote_div .field-wrap input, .ImportantNote_div .field-wrap textarea, .ImportantNote_div .field-wrap select {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, .15);
-    font-size: 17px;
+    font-size: 14px;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: all .3s ease;
@@ -2315,7 +2315,7 @@
     outline: 0;
     line-height: 22px;
     background-color: transparent;
-    padding: 12px 15px;
+    padding: 10px 15px;
 }
 .ImportantNote_div .field-wrap textarea {
     resize: none;
@@ -2748,6 +2748,72 @@
     display: inline-grid;
     grid-template-columns: ;
 }
+/*----------------------------------------------------------------*/
+.Exhibitors_Travel_Assistance_section, .Visitior_promotion_section, .Visitior_guide_section, .product_launch{
+    background-color: #0A0E14;
+    padding: 90px 0;
+    position: relative;
+}
+.Exhibitors_Travel_Assistance_section::before, .Visitior_promotion_section::before, .Visitior_guide_section::before, .product_launch::before {
+  content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/Coming_soon_banner3.png);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.Shuttle_Bus_Service_section.for_coming_soon{
+    background-color: #0A0E14;
+    padding: 90px 0;
+    position: relative;
+}
+.Shuttle_Bus_Service_section.for_coming_soon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/Coming_soon_banner3.png);
+    opacity: 0.8;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-position: 0% 0%;
+}
+.radiio_divs{
+    width: 100%;
+    /* border: 1px solid #f3f3f3; */
+    /* background: #fff; */
+    /* padding: 15px; */
+    border-radius: 0px;
+    margin-top: 15px;
+}
+
+
+fieldset.scheduler-border {
+    border: 1px groove #FFA800 !important;
+    padding: 1em 1em 0em 1em !important;
+    border-radius: 0px;
+}
+
+legend.scheduler-border {
+    float: none;
+    width:inherit;
+    padding:0 10px;
+    border-bottom:none;
+    font-size: 16px;
+    color: #FFA800;
+    margin-bottom: 0px;
+}
+
 
 /*---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
