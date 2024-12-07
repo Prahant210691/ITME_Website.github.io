@@ -182,8 +182,8 @@
 	height: 40px;
 }
 .tgmenu__nav .logo img{
-/*	max-height: 75px;*/
-    max-height: 105px;
+	max-height: 75px;
+/*    max-height: 105px;*/
 }
 .tgmenu__action > ul li.header-btn a span{
     transform: scaleX(-1);
