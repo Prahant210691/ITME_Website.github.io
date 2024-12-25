@@ -287,6 +287,9 @@
 	font-size: 15px;
     font-weight: 500;
 }
+.grid_view_head .grid_div:hover{
+    background-image: linear-gradient(to bottom right, #a16d0f, #d5b22a);
+}
 .custom_container_data{
 	margin-top: 6rem;
 }
@@ -1293,6 +1296,9 @@
 	padding: 0px 10px;
 	color: #fff;
 }
+.footer_social_media_icons .separator ul li a:hover{
+    color: #FFA800;
+}
 
 .footer_social_media_icons .separator::before,
 .footer_social_media_icons .separator::after {
@@ -1782,7 +1788,7 @@
 	text-align: justify;
 }
 /*----------------------------------------------------------------*/
-.At_a_Glance_ITME2022_section{
+.At_a_Glance_ITME2026_section{
     background: #0A0E14;
     padding: 90px 0;
     position: relative;
