@@ -235,6 +235,13 @@
 .header_text{
 	text-align: center;
 }
+.header_text h1.title{
+    margin-bottom: 0px;
+    color: var(--tg-color-white-default);
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
 .header_text h2.title{
 	margin-bottom: 0px;
     color: var(--tg-color-white-default);
@@ -1490,7 +1497,7 @@
     top: 0;
     left: 0;
 }
-.experience_year .d-flex h2{
+.experience_year .d-flex h1{
     margin-bottom: 0;
     font-size: 60px;
 }
@@ -1504,7 +1511,7 @@
 	background: #0A0E14;
 	padding: 0px 0 0px;
 }
-.Objective_Event h2{
+.Objective_Event h1{
 	color: #FFA800;
 	text-transform: capitalize;
     margin-bottom: 30px;
