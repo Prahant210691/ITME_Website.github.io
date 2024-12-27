@@ -1337,7 +1337,7 @@
 	
 }
 .footer__bottom-menu .list-wrap li a{
-	color: #fff;
+	color: #9E9E9E;
 	text-decoration: none;
 }
 .footer__bottom-menu .list-wrap li a:hover{
@@ -1654,6 +1654,7 @@
     background: #0A0E14;
     padding: 90px 0 215px;
 }
+
 .InvitationLetter_section .container{
 	position: relative;
 }
@@ -1731,6 +1732,11 @@
 }
 .InvitationLetter_section .chairman_content .message.last_para {
     margin-bottom: 45px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) { 
+    .InvitationLetter_section {
+        padding: 90px 0 300px;
+    }
 }
 /*----------------------------------------------------------------*/
 .award_grid{
