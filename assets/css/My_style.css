@@ -401,6 +401,7 @@
 }
 .chairman_content .message.last_para{
 	margin-bottom: 45px;
+    text-align: justify;
 }
 .read_more_btn{
 	border: 1px solid #FFA200;
@@ -430,6 +431,7 @@
 }
 .about_ITME_content p{
 	color: #fff;
+    text-align: justify;
 }
 .about_ITME_content p.last_para{
 	margin-bottom: 21px;
@@ -452,6 +454,7 @@
 	position: relative;
 	padding-left: 30px;
     margin-bottom: 15px;
+    text-align: justify;
 }
 .about_ITME_content ul li:last-child{
 	margin-bottom: 30px;
@@ -1021,6 +1024,7 @@
 	font-size: 15px;
 	margin-bottom: 0px;
 	color: #fff;
+    text-align: justify;
 }
 .testimonal_card .card-footer{
     /*	background: #242424;*/
@@ -1424,6 +1428,7 @@
 }
 .about-content p{
 	color: #74787C;
+    text-align: justify;
 }
 .triangle-down {
 	width: 0;
@@ -1565,6 +1570,7 @@
 .chapters_section .accordion-button, .chapters_section .accordion-body{
     background: linear-gradient(45deg, #3D3D3D, #A3A3A3);
     color: #fff !important;
+    text-align: justify;
 }
 .chapters_section .accordion-button::after, .chapters_section .accordion-button:not(.collapsed)::after{
     background-image: url('../../assets/img/chevron_img.svg');
@@ -1722,7 +1728,7 @@
     z-index: 1;
     border: 1px solid #FFA200;
     border-radius: 5px;
-
+    text-align: justify;
     position: absolute;
     top: 0;
     left: 15rem;
@@ -2870,6 +2876,7 @@ legend.scheduler-border {
 	}
 	.chairman_content .message.last_para {
 	    margin-bottom: 23px;
+
 	}
 	.about_ITME_content.pt-30{
 		padding-top: 0px;
