@@ -1884,6 +1884,7 @@
 .At_Glance_section_grid_view .cont_txt p{
 	margin-bottom: 0px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 
@@ -2077,6 +2078,8 @@
     padding: 15px;
     border: 1px solid #bdbdbd;
     border-radius: 3px;
+    max-height: 350px;
+    overflow: auto;
 }
 
 .sub_accordion .faq-drawer__trigger:checked + .faq-drawer__title::after {
