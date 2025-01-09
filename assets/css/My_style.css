@@ -1511,6 +1511,18 @@
     font-size: 22px;
     margin-left: 15px;
 }
+.experience_year .d-flex h3 span.with_text{
+    margin-bottom: 9px;
+    font-size: 16px;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+.experience_year .d-flex h3 span.edition_text{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 3px;
+}
 
 .Objective_Event {
 	background: #0A0E14;

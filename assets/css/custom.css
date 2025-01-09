@@ -3,12 +3,17 @@
     z-index: 99999;
     width: 100%;
 }
+.tg-header__top-menu .list-wrap li a{
+    text-transform: lowercase;
+    font-weight: 500;
+}
 .tg-header__top-menu ul.list-wrap li{
 	color: #fff;
 	font-weight: 500;
 }
 .tg-header__top-menu ul.list-wrap li i{
 	color: var(--tg-theme-primary);
+    margin-right: 5px;
 }
 .tgmenu__navbar-wrap ul li .sub-menu li a{
 	white-space: nowrap;
