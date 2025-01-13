@@ -516,7 +516,8 @@
     left: 0;
     position: absolute;*/
 
-    width: 100px;
+/*    width: 100px;*/
+    width: 210px;
     padding: 15px;
     text-align: center;
 }

@@ -176,7 +176,7 @@ var sliderSwiper = new Swiper('.slider-active-three', {
 =============================================*/
 var projectSwiper = new Swiper('.project_active', {
     // Optional parameters
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 24,
     loop: true,
     // autoplay: {
@@ -184,13 +184,13 @@ var projectSwiper = new Swiper('.project_active', {
     // },
     breakpoints: {
         '1500': {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         '1200': {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         '992': {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         '768': {
             slidesPerView: 2,
