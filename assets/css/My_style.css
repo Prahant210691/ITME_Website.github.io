@@ -152,13 +152,13 @@
 	font-size: 15px;
     text-transform: capitalize;
     font-weight: 500;
-    padding: 24px 24px;
+    padding: 24px 10px;
 }
 .tgmenu__navbar-wrap ul li a:hover{
 	font-size: 15px;
     text-transform: capitalize;
     font-weight: 500;
-    padding: 24px 24px;
+    padding: 24px 10px;
 }
 .my_login_btn{
     padding: 8px 10px;
