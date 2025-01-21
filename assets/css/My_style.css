@@ -153,6 +153,7 @@
     text-transform: capitalize;
     font-weight: 500;
     padding: 24px 10px;
+    letter-spacing: 1px;
 }
 .tgmenu__navbar-wrap ul li a:hover{
 	font-size: 15px;
@@ -2147,7 +2148,7 @@
 .ExhibitorsList_section .table thead tr th, .ExhibitorsList_section .table tbody tr td{
    font-weight: 400; 
    vertical-align: top;
-   white-space: nowrap;
+/*   white-space: nowrap;*/
 }
 /*-------------------------------------------------------------*/
 .Past_Events_section{
