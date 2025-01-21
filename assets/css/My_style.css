@@ -3450,3 +3450,124 @@ legend.scheduler-border {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/*---------------------------------------------------------------------*/
+/*Timer CSS start*/
+.timer_modal_dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+.timer_modal_dialog .modal-body{
+    background: #373737;
+    padding: 28px;
+}
+.timer_modal_dialog .modal-body:before{
+
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/abstract_img.jpg);
+    opacity: 0.3;
+
+}
+.timer_modal_dialog .modal-body .btn-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #fff;
+}
+.timer_modal_dialog .container{
+    text-align: center;
+    padding: 0;
+}
+
+.timer_modal_dialog .container .image {
+  width: 35%;
+  margin-bottom: 25px;
+}
+.timer_modal_dialog .container header {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.timer_modal_dialog .container p {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+.timer_modal_dialog .container .time-content {
+  display: flex;
+  column-gap: 70px;
+  align-items: center;
+  margin: 2rem;
+  border: 1px solid white;
+  padding: 2rem 2.5rem;
+  border-radius: 0.5rem;
+  background: rgba(250, 250, 250, 0.2);
+  position: relative;
+  z-index: 2;
+}
+.timer_modal_dialog .time-content .time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.timer_modal_dialog .time .number {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1;
+  color: #eee;
+}
+.timer_modal_dialog .time .text {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+.timer_modal_width{
+    width: 800px;min-width: 800px;max-width: 800px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .timer_modal_width{
+        width: 95%;
+        min-width: 95%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .timer_modal_dialog .modal-body{
+        padding: 20px;
+    }
+    .timer_modal_dialog .container .image {
+        width: 65%;
+    }
+    .timer_modal_dialog .container header {
+        font-size: 30px;
+    }
+    .timer_modal_dialog .container p {
+        font-size: 19px;
+    }
+    .timer_modal_dialog .container .time-content{
+        margin: 2rem 0rem;
+        padding: 1rem 1rem;
+    }
+    .timer_modal_dialog .time .number{
+        font-size: 35px;
+    }
+    .timer_modal_dialog .container .time-content{
+        column-gap: 34px;
+        margin: 2rem 0rem 0rem;
+    }
+    .timer_modal_dialog .time .text{
+        font-weight: 500;
+    }
+}
+/*Timer CSS End */
