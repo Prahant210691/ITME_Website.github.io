@@ -1000,6 +1000,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: transparent;
+    height: 454px;
 }
 .testimonal_card .card-body:after {
     content: '';
@@ -1023,10 +1024,11 @@
     margin-bottom: 15px;
 }
 .testimonal_card .card-body p{
-	font-size: 15px;
-	margin-bottom: 0px;
-	color: #fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #fff;
     text-align: justify;
+    line-height: 1.4;
 }
 .testimonal_card .card-footer{
     /*	background: #242424;*/

@@ -357,13 +357,13 @@ var similarSwiper = new Swiper('.similar__project-active', {
     },
     breakpoints: {
         '1500': {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         '1200': {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         '992': {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         '768': {
             slidesPerView: 2,
@@ -812,5 +812,19 @@ const timeFunction = setInterval(() => {
   hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
   days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
 }, 1000); //1000ms = 1s
+
+
+
+
+$(document).ready(function() {    
+   $('#accordionExample .hide').hide();
+   $('.chapters_section .accordion-body').click(function(){
+        event.preventDefault();
+        window.location = "index-of-product.html";
+           $(this).parent().next().slideToggle()
+                  .siblings('.hide').slideUp();
+           return false;
+   });
+});
 
 })(jQuery);
