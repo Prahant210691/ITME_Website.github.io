@@ -403,7 +403,8 @@
                             <p class="message mb_0">Ketan Sanghvi</p>
                             <p class="message last_para">Chairman , INDIA ITME SOCIETY</p>
                             <!-- <p class="message last_para">With great pleasure I share with you that, “India ITME Society” shall host 11th edition of India ITME from 08th to 13th December 2022 at India Exposition Mart Ltd, (IEML) Greater Noida.</p> -->
-                            <a href="https://india-itme.com/#/visitorregistration/ITME2026" target="_blank" class="read_more_btn">REGISTER NOW</a>
+                            <a href="javascript:void(0)" class="read_more_btn" id="timer_modal">REGISTER NOW</a>
+
                         </div>
                     </div>
                 </div>
@@ -608,7 +609,43 @@
         </div>
     </footer>
 
-
+    <div class="modal timerPop" id="timer_Modal">
+        <div class="modal-dialog timer_modal_dialog timer_modal_width">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" id="close_timer_Modal"></button>
+                    <section class="container">
+                        <img src="assets/img/logo_2.png" alt="logo" class="image" />
+                        <header>Coming Soon</header>
+                        <p>
+                            The registration or login will start on 21<sup>st</sup> February 2025 at 12:00 noon
+                        </p>
+                        <p class="timer_content">
+                            Application and booking is confirmed upon submission of completed application form along with 1st installment. The allocation process is on a first come-first-served basis on submission of 100% payment only.
+                        </p>
+                        <div class="time-content">
+                            <div class="time days">
+                                <span class="number"></span>
+                                <span class="text">days</span>
+                            </div>
+                            <div class="time hours">
+                                <span class="number"></span>
+                                <span class="text">hours</span>
+                            </div>
+                            <div class="time minutes">
+                                <span class="number"></span>
+                                <span class="text">minutes</span>
+                            </div>
+                            <div class="time seconds">
+                                <span class="number"></span>
+                                <span class="text">seconds</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- JS here -->
@@ -635,6 +672,57 @@
     <!-- <script>
         SVGInject(document.querySelectorAll("img.injectable"));
     </script> -->
+
+
+    <script type="text/javascript">
+        const timer_modal = document.getElementById("timer_modal");
+        const modal_open = document.getElementById("timer_Modal");
+        const close_timer_Modal = document.getElementById("close_timer_Modal");
+
+        timer_modal.addEventListener("click", () => {
+            modal_open.classList.add("active");
+        });
+
+        close_timer_Modal.addEventListener("click", () => {
+            modal_open.classList.remove("active");
+        });
+
+        const daysElement = document.querySelector(".days .number");
+        const hoursElement = document.querySelector(".hours .number");
+        const minutesElement = document.querySelector(".minutes .number");
+        const secondsElement = document.querySelector(".seconds .number");
+
+        const targetDate = new Date("2025-01-23T16:48:00");
+
+        function updateCountdown() {
+            const now = new Date();
+            const remainingTime = targetDate - now;
+
+            if (remainingTime <= 0) {
+                timer_modal.onclick = () => {
+                    modal_open.classList.remove("active");
+                    window.location.href = "https://india-itme.com/#/visitorregistration/ITME2026";
+                }
+                return;
+            }
+            else{
+                const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+                // Update the timer elements
+                daysElement.textContent = days < 10 ? `0${days}` : days;
+                hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+                minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+                secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+
+
 </body>
 
 </html>

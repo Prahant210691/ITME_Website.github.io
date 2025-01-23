@@ -3499,7 +3499,13 @@ legend.scheduler-border {
   text-align: center;
 }
 .timer_modal_dialog .container p {
-  font-size: 22px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+.timer_modal_dialog .container p.timer_content {
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -3508,7 +3514,7 @@ legend.scheduler-border {
   display: flex;
   column-gap: 70px;
   align-items: center;
-  margin: 2rem;
+  margin: 2rem 2rem 1rem;
   border: 1px solid white;
   padding: 2rem 2.5rem;
   border-radius: 0.5rem;
@@ -3535,6 +3541,38 @@ legend.scheduler-border {
 }
 .timer_modal_width{
     width: 800px;min-width: 800px;max-width: 800px;
+}
+.modal.timerPop,
+.modal-overlay {
+    display: none;
+}
+
+.modal.timerPop.active,
+.modal-overlay.active {
+    display: block;
+}
+
+/*.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}*/
+
+.modal.timerPop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00000075;
+    z-index: 1000;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
 }
 
 @media screen and (max-width: 480px) {

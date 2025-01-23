@@ -778,43 +778,90 @@ $(".modal").on('shown.bs.modal', function() {
 
 // ------------------------------------------------------------------
 
-const seconds = document.querySelector(".seconds .number"),
-  minutes = document.querySelector(".minutes .number"),
-  hours = document.querySelector(".hours .number"),
-  days = document.querySelector(".days .number");
+// const seconds = document.querySelector(".seconds .number"),
+//   minutes = document.querySelector(".minutes .number"),
+//   hours = document.querySelector(".hours .number"),
+//   days = document.querySelector(".days .number");
 
-let secValue = 11,
-  minValue = 6,
-  hourValue = 3,
-  dayValue = 30;
+// let secValue = 11,
+//   minValue = 6,
+//   hourValue = 3,
+//   dayValue = 30;
 
-const timeFunction = setInterval(() => {
-  secValue--;
+// const timeFunction = setInterval(() => {
+//   secValue--;
 
-  if (secValue === 0) {
-    minValue--;
-    secValue = 60;
-  }
-  if (minValue === 0) {
-    hourValue--;
-    minValue = 60;
-  }
-  if (hourValue === 0) {
-    dayValue--;
-    hourValue = 24;
-  }
+//   if (secValue === 0) {
+//     minValue--;
+//     secValue = 60;
+//   }
+//   if (minValue === 0) {
+//     hourValue--;
+//     minValue = 60;
+//   }
+//   if (hourValue === 0) {
+//     dayValue--;
+//     hourValue = 24;
+//   }
 
-  if (dayValue === 0) {
-    clearInterval(timeFunction);
-  }
-  seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
-  minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
-  hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
-  days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
-}, 1000); //1000ms = 1s
+//   if (dayValue === 0) {
+//     clearInterval(timeFunction);
+//   }
+//   seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
+//   minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
+//   hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
+//   days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
+// }, 1000); //1000ms = 1s
+
+
+// const daysElement = document.querySelector(".days .number");
+// const hoursElement = document.querySelector(".hours .number");
+// const minutesElement = document.querySelector(".minutes .number");
+// const secondsElement = document.querySelector(".seconds .number");
+
+// // Set the target date
+// const targetDate = new Date("2025-01-23T12:00:00");
+
+// // Reset the target date to ensure accurate calculations
+// targetDate.setHours(12, 0, 0, 0);
+
+// function updateCountdown() {
+//     const now = new Date();
+//     const remainingTime = targetDate - now; // Time difference in milliseconds
+
+//     if (remainingTime <= 0) {
+// registerBtn.onclick = () => {
+//                 window.location.href = "https://itme2022.india-itme.com/"; // Replace with your URL
+//             }
+//         return;
+//     }
+
+//     // Convert milliseconds to days, hours, minutes, and seconds
+//     const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+//     const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+//     const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+//     // Update the DOM elements with formatted values
+//     daysElement.textContent = days < 10 ? `0${days}` : days;
+//     hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+//     minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+//     secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+// }
+
+// // Start updating the countdown every second
+// const countdownInterval = setInterval(updateCountdown, 1000);
+
+
+// ------------------------------------------------------------------------------------------------
 
 
 
+
+
+
+
+// ------------------------------------------------------------------------------------------
 
 $(document).ready(function() {    
    $('#accordionExample .hide').hide();
