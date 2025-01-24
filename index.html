@@ -153,7 +153,7 @@
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Visitors</a>
                                             <ul class="sub-menu">
-                                                <li><a href="javascript:void(0)" class="modalTrigger" id="VisitorRegistrationDrop">Visitor Registration</a></li>
+                                                <li><a href="javascript:void(0)" class="visitor_header_footer_click">Visitor Registration</a></li>
                                                 <li><a href="visitor-travel-assistance.html">Visitor Travel Assistance</a></li>
                                                 <li><a href="visitor-promotion.html">Visitor Promotion</a></li>
                                                 <li><a href="shuttle-bus-service.html">Shuttle Bus Service</a></li>
@@ -210,7 +210,8 @@
                                             </a>
                                         </li> -->
                                         <li>
-                                            <a href="javascript:void(0)" class="btn border-btn my_login_btn" id="login"  >Login</a>
+                                            <!-- <a href="javascript:void(0)" class="btn border-btn my_login_btn login_btn_click">Login</a> -->
+                                            <a href="javascript:void(0)" class="btn border-btn my_login_btn login_btn_click">Login</a>
                                         </li>
                                         <!-- <li class="header-btn">
                                             <a href="javascript:void(0)" class="demo-trigger"><span class="material-icons">sort</span></a>
@@ -399,12 +400,13 @@
                                         <p class="subtitle">4th - 9th December 2026 @ Greater Noida, Uttar Pradesh</p>
                                         <!-- <a href="https://india-itme.com/#/ITME2026" target="_blank" class="registerNow_btn">REGISTER NOW</a> -->
                                         <!-- <a class="registerNow_btn" data-bs-toggle="modal" data-bs-target="#timer_Modal" >REGISTER NOW</a> -->
-                                        <a class="registerNow_btn modalTrigger" id="timer_modal">REGISTER NOW</a>
+                                        <!-- <a class="registerNow_btn modalTrigger" id="timer_modal">REGISTER NOW</a> -->
+                                        <a class="registerNow_btn register_click">REGISTER NOW</a>
                                         <div class="grid_view_head">
 
 
 
-                                            <a href="javascript:void(0)" class="modalTrigger" id="ExhibitorSpaceBooking">
+                                            <a href="javascript:void(0)" class="booking_click">
                                                 <div class="grid_div">
                                                     <img src="assets/img/space_booking_img.png" alt="space booking img" loading="lazy"/>
                                                     <h6>Exhibitor Space Booking</h6>
@@ -418,7 +420,7 @@
                                                 </div>
                                             </a>
 
-                                            <a href="javascript:void(0)" class="modalTrigger" id="VisitorRegistration" >
+                                            <a href="javascript:void(0)" class="visitor_header_footer_click">
                                                 <div class="grid_div">
                                                     <img src="assets/img/visitor_reg_img.png" alt="visitor registration image" loading="lazy" />
                                                     <h6>Visitor Registration</h6>
@@ -1785,7 +1787,7 @@
                             <div class="footer__widget-link">
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="javascript:void(0)" class="modalTrigger" id="VisitorRegistrationFootor"><i class="renova-right-arrow"></i><span>Visitor Registration</span></a>
+                                        <a href="javascript:void(0)" class="visitor_header_footer_click"><i class="renova-right-arrow"></i><span>Visitor Registration</span></a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)"><i class="renova-right-arrow"></i><span>Visitor Travel Assistance</span></a>
@@ -1895,52 +1897,47 @@
     </footer>
     <!-- footer-area-end -->
 
-    <style>
-        
+    
 
-
-
-    </style>
-
-<!-- <div id="modalOverlay" class="modal-overlay"></div> -->
-<div class="modal timerPop" id="timer_Modal">
-    <div class="modal-dialog timer_modal_dialog timer_modal_width">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close" id="close_timer_Modal"></button>
-                <section class="container">
-                    <img src="assets/img/logo_2.png" alt="logo" class="image" />
-                    <header>Coming Soon</header>
-                    <p>
-                        The registration or login will start on 21<sup>st</sup> February 2025 at 12:00 noon
-                    </p>
-                    <p class="timer_content">
-                        <!-- The registration will be on a first come first basis. -->
-                        Application and booking is confirmed upon submission of completed application form along with 1st installment. The allocation process is on a first come-first-served basis on submission of 100% payment only.
-                    </p>
-                    <div class="time-content">
-                        <div class="time days">
-                            <span class="number"></span>
-                            <span class="text">days</span>
+    <!-- <div id="modalOverlay" class="modal-overlay"></div> -->
+    <div class="modal timerPop" id="timer_Modal">
+        <div class="modal-dialog timer_modal_dialog timer_modal_width">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" id="close_timer_Modal"></button>
+                    <section class="container">
+                        <img src="assets/img/logo_2.png" alt="logo" class="image" />
+                        <header>Coming Soon</header>
+                        <p>
+                            The registration or login will start on 21<sup>st</sup> February 2025 at 12:00 noon
+                        </p>
+                        <p class="timer_content">
+                            <!-- The registration will be on a first come first basis. -->
+                            Application and booking is confirmed upon submission of completed application form along with 1st installment. The allocation process is on a first come-first-served basis on submission of 100% payment only.
+                        </p>
+                        <div class="time-content">
+                            <div class="time days">
+                                <span class="number"></span>
+                                <span class="text">days</span>
+                            </div>
+                            <div class="time hours">
+                                <span class="number"></span>
+                                <span class="text">hours</span>
+                            </div>
+                            <div class="time minutes">
+                                <span class="number"></span>
+                                <span class="text">minutes</span>
+                            </div>
+                            <div class="time seconds">
+                                <span class="number"></span>
+                                <span class="text">seconds</span>
+                            </div>
                         </div>
-                        <div class="time hours">
-                            <span class="number"></span>
-                            <span class="text">hours</span>
-                        </div>
-                        <div class="time minutes">
-                            <span class="number"></span>
-                            <span class="text">minutes</span>
-                        </div>
-                        <div class="time seconds">
-                            <span class="number"></span>
-                            <span class="text">seconds</span>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -2022,7 +2019,7 @@
     </script>
 
    
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     const timer_modal = document.getElementById("timer_modal");
     const exhibitorSpaceBooking = document.getElementById("ExhibitorSpaceBooking");
     const visitorRegistration = document.getElementById("VisitorRegistration");
@@ -2065,7 +2062,7 @@
     const minutesElement = document.querySelector(".minutes .number");
     const secondsElement = document.querySelector(".seconds .number");
 
-    const targetDate = new Date("2025-01-23T16:48:00");
+    const targetDate = new Date("2025-02-21T16:48:00");
 
     function updateCountdown() {
         const now = new Date();
@@ -2119,7 +2116,7 @@
     const countdownInterval = setInterval(updateCountdown, 1000);
 
 
-</script>
+</script> -->
 
   
 </body>

@@ -854,13 +854,263 @@ $(".modal").on('shown.bs.modal', function() {
 
 
 // ------------------------------------------------------------------------------------------------
+// For Login Click Timer start ----------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    // Get all elements with the trigger class
+    const login_btn_clicks = document.querySelectorAll(".login_btn_click");
+    const modal_open = document.getElementById("timer_Modal");
+    const close_timer_Modal = document.getElementById("close_timer_Modal");
+
+    let countdownFinished = false; // Flag to track if the countdown has finished
+
+    // Attach click event to all triggers
+    login_btn_clicks.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+            if (countdownFinished) {
+                // Redirect if the countdown is finished
+                window.location.href = "https://india-itme.com/";
+            } else {
+                // Open the modal if the countdown is still active
+                modal_open.classList.add("active");
+            }
+        });
+    });
+
+    // Close modal on clicking the close button
+    if (close_timer_Modal) {
+        close_timer_Modal.addEventListener("click", () => {
+            modal_open.classList.remove("active");
+        });
+    }
+
+    // Countdown Timer Code
+    const daysElement = document.querySelector(".days .number");
+    const hoursElement = document.querySelector(".hours .number");
+    const minutesElement = document.querySelector(".minutes .number");
+    const secondsElement = document.querySelector(".seconds .number");
+
+    const targetDate = new Date("2025-02-21T12:00:00");
+
+    function updateCountdown() {
+        const now = new Date();
+        const remainingTime = targetDate - now;
+
+        if (remainingTime <= 0) {
+            modal_open.classList.remove("active");
+            countdownFinished = true; // Mark the countdown as finished
+            clearInterval(countdownInterval);
+            return;
+        } else {
+            const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+            // Update the timer elements
+            daysElement.textContent = days < 10 ? `0${days}` : days;
+            hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+            minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+            secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+});
+// For Login Click Timer end ----------------------------------
 
 
+// For Visitors Click Timer start ----------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    // Get all elements with the trigger class
+    const visitor_header_footer_clicks = document.querySelectorAll(".visitor_header_footer_click");
+    const modal_open = document.getElementById("timer_Modal");
+    const close_timer_Modal = document.getElementById("close_timer_Modal");
+
+    let countdownFinished = false; // Flag to track if the countdown has finished
+
+    // Attach click event to all triggers
+    visitor_header_footer_clicks.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+            if (countdownFinished) {
+                // Redirect if the countdown is finished
+                window.location.href = "https://india-itme.com/#/visitorregistration/ITME2026";
+            } else {
+                // Open the modal if the countdown is still active
+                modal_open.classList.add("active");
+            }
+        });
+    });
+
+    // Close modal on clicking the close button
+    if (close_timer_Modal) {
+        close_timer_Modal.addEventListener("click", () => {
+            modal_open.classList.remove("active");
+        });
+    }
+
+    // Countdown Timer Code
+    const daysElement = document.querySelector(".days .number");
+    const hoursElement = document.querySelector(".hours .number");
+    const minutesElement = document.querySelector(".minutes .number");
+    const secondsElement = document.querySelector(".seconds .number");
+
+    const targetDate = new Date("2025-02-21T12:00:00");
+
+    function updateCountdown() {
+        const now = new Date();
+        const remainingTime = targetDate - now;
+
+        if (remainingTime <= 0) {
+            modal_open.classList.remove("active");
+            countdownFinished = true; // Mark the countdown as finished
+            clearInterval(countdownInterval);
+            return;
+        } else {
+            const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+            // Update the timer elements
+            daysElement.textContent = days < 10 ? `0${days}` : days;
+            hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+            minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+            secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+});
+// For Visitors Click Timer end ----------------------------------
 
 
+// For Register Click Timer start ----------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    // Get all elements with the trigger class
+    const register_clicks = document.querySelectorAll(".register_click");
+    const modal_open = document.getElementById("timer_Modal");
+    const close_timer_Modal = document.getElementById("close_timer_Modal");
 
+    let countdownFinished = false; // Flag to track if the countdown has finished
 
+    // Attach click event to all triggers
+    register_clicks.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+            if (countdownFinished) {
+                // Redirect if the countdown is finished
+                window.location.href = "https://itme2022.india-itme.com/";
+            } else {
+                // Open the modal if the countdown is still active
+                modal_open.classList.add("active");
+            }
+        });
+    });
 
+    // Close modal on clicking the close button
+    if (close_timer_Modal) {
+        close_timer_Modal.addEventListener("click", () => {
+            modal_open.classList.remove("active");
+        });
+    }
+
+    // Countdown Timer Code
+    const daysElement = document.querySelector(".days .number");
+    const hoursElement = document.querySelector(".hours .number");
+    const minutesElement = document.querySelector(".minutes .number");
+    const secondsElement = document.querySelector(".seconds .number");
+
+    const targetDate = new Date("2025-02-21T12:00:00");
+
+    function updateCountdown() {
+        const now = new Date();
+        const remainingTime = targetDate - now;
+
+        if (remainingTime <= 0) {
+            modal_open.classList.remove("active");
+            countdownFinished = true; // Mark the countdown as finished
+            clearInterval(countdownInterval);
+            return;
+        } else {
+            const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+            // Update the timer elements
+            daysElement.textContent = days < 10 ? `0${days}` : days;
+            hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+            minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+            secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+});
+// For Register Click Timer end ----------------------------------
+
+// For Booking Click Timer start ----------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    // Get all elements with the trigger class
+    const booking_clicks = document.querySelectorAll(".booking_click");
+    const modal_open = document.getElementById("timer_Modal");
+    const close_timer_Modal = document.getElementById("close_timer_Modal");
+
+    let countdownFinished = false; // Flag to track if the countdown has finished
+
+    // Attach click event to all triggers
+    booking_clicks.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+            if (countdownFinished) {
+                // Redirect if the countdown is finished
+                window.location.href = "https://india-itme.com/#/ITME2026";
+            } else {
+                // Open the modal if the countdown is still active
+                modal_open.classList.add("active");
+            }
+        });
+    });
+
+    // Close modal on clicking the close button
+    if (close_timer_Modal) {
+        close_timer_Modal.addEventListener("click", () => {
+            modal_open.classList.remove("active");
+        });
+    }
+
+    // Countdown Timer Code
+    const daysElement = document.querySelector(".days .number");
+    const hoursElement = document.querySelector(".hours .number");
+    const minutesElement = document.querySelector(".minutes .number");
+    const secondsElement = document.querySelector(".seconds .number");
+
+    const targetDate = new Date("2025-02-21T12:00:00");
+
+    function updateCountdown() {
+        const now = new Date();
+        const remainingTime = targetDate - now;
+
+        if (remainingTime <= 0) {
+            modal_open.classList.remove("active");
+            countdownFinished = true; // Mark the countdown as finished
+            clearInterval(countdownInterval);
+            return;
+        } else {
+            const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+            // Update the timer elements
+            daysElement.textContent = days < 10 ? `0${days}` : days;
+            hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+            minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+            secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+});
+// For Booking Click Timer end ----------------------------------
 // ------------------------------------------------------------------------------------------
 
 $(document).ready(function() {    

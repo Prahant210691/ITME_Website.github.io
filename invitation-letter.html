@@ -132,7 +132,7 @@
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">Visitors</a>
                                             <ul class="sub-menu">
-                                                <li><a href="https://india-itme.com/#/visitorregistration/ITME2026" target="_blank">Visitor Registration</a></li>
+                                                <li><a href="javascript:void(0)" class="visitor_header_footer_click">Visitor Registration</a></li>
                                                 <li><a href="visitor-travel-assistance.html">Visitor Travel Assistance</a></li>
                                                 <li><a href="visitor-promotion.html">Visitor Promotion</a></li>
                                                 <li><a href="shuttle-bus-service.html">Shuttle Bus Service</a></li>
@@ -189,7 +189,7 @@
                                             </a>
                                         </li> -->
                                         <li>
-                                            <a href="https://india-itme.com/" class="btn border-btn my_login_btn" target="_blank">Login</a>
+                                            <a href="javascript:void(0)" class="btn border-btn my_login_btn login_btn_click">Login</a>
                                         </li>
                                         <!-- <li class="header-btn">
                                             <a href="javascript:void(0)" class="demo-trigger"><span class="material-icons">sort</span></a>
@@ -403,7 +403,7 @@
                             <p class="message mb_0">Ketan Sanghvi</p>
                             <p class="message last_para">Chairman , INDIA ITME SOCIETY</p>
                             <!-- <p class="message last_para">With great pleasure I share with you that, “India ITME Society” shall host 11th edition of India ITME from 08th to 13th December 2022 at India Exposition Mart Ltd, (IEML) Greater Noida.</p> -->
-                            <a href="javascript:void(0)" class="read_more_btn" id="timer_modal">REGISTER NOW</a>
+                            <a href="javascript:void(0)" class="read_more_btn register_click">REGISTER NOW</a>
 
                         </div>
                     </div>
@@ -500,7 +500,7 @@
                             <div class="footer__widget-link">
                                 <ul class="list-wrap">
                                     <li>
-                                        <a href="https://india-itme.com/#/visitorregistration/ITME2026" target="_blank"><i class="renova-right-arrow"></i><span>Visitor Registration</span></a>
+                                        <a href="javascript:void(0)" class="visitor_header_footer_click"><i class="renova-right-arrow"></i><span>Visitor Registration</span></a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)"><i class="renova-right-arrow"></i><span>Visitor Travel Assistance</span></a>
@@ -674,53 +674,6 @@
     </script> -->
 
 
-    <script type="text/javascript">
-        const timer_modal = document.getElementById("timer_modal");
-        const modal_open = document.getElementById("timer_Modal");
-        const close_timer_Modal = document.getElementById("close_timer_Modal");
-
-        timer_modal.addEventListener("click", () => {
-            modal_open.classList.add("active");
-        });
-
-        close_timer_Modal.addEventListener("click", () => {
-            modal_open.classList.remove("active");
-        });
-
-        const daysElement = document.querySelector(".days .number");
-        const hoursElement = document.querySelector(".hours .number");
-        const minutesElement = document.querySelector(".minutes .number");
-        const secondsElement = document.querySelector(".seconds .number");
-
-        const targetDate = new Date("2025-01-23T16:48:00");
-
-        function updateCountdown() {
-            const now = new Date();
-            const remainingTime = targetDate - now;
-
-            if (remainingTime <= 0) {
-                timer_modal.onclick = () => {
-                    modal_open.classList.remove("active");
-                    window.location.href = "https://india-itme.com/#/visitorregistration/ITME2026";
-                }
-                return;
-            }
-            else{
-                const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
-                // Update the timer elements
-                daysElement.textContent = days < 10 ? `0${days}` : days;
-                hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
-                minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
-                secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
-            }
-        }
-
-        const countdownInterval = setInterval(updateCountdown, 1000);
-    </script>
 
 
 </body>
