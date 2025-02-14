@@ -948,6 +948,8 @@
 .gallary_section .project__item img{
     border-radius: 10px;
     height: 206px;
+    object-fit: cover;
+    width: 100%;
 }
 .gallary_section::before {
     content: "";
