@@ -868,7 +868,8 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger.addEventListener("click", () => {
             if (countdownFinished) {
                 // Redirect if the countdown is finished
-                window.location.href = "https://india-itme.com/";
+                // window.location.href = "https://india-itme.com/";
+                window.open("https://india-itme.com/", "_blank");
             } else {
                 // Open the modal if the countdown is still active
                 modal_open.classList.add("active");
@@ -933,7 +934,8 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger.addEventListener("click", () => {
             if (countdownFinished) {
                 // Redirect if the countdown is finished
-                window.location.href = "https://india-itme.com/#/visitorregistration/ITME2026";
+                // window.location.href = "https://india-itme.com/#/visitorregistration/ITME2026";
+                window.open("https://india-itme.com/#/visitorregistration/ITME2026", "_blank");
             } else {
                 // Open the modal if the countdown is still active
                 modal_open.classList.add("active");
@@ -998,7 +1000,8 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger.addEventListener("click", () => {
             if (countdownFinished) {
                 // Redirect if the countdown is finished
-                window.location.href = "https://india-itme.com/#/ITME2026";
+                // window.location.href = "https://india-itme.com/#/ITME2026";
+                window.open("https://india-itme.com/#/ITME2026", "_blank");
             } else {
                 // Open the modal if the countdown is still active
                 modal_open.classList.add("active");
@@ -1062,7 +1065,8 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger.addEventListener("click", () => {
             if (countdownFinished) {
                 // Redirect if the countdown is finished
-                window.location.href = "https://india-itme.com/#/ITME2026";
+                // window.location.href = "https://india-itme.com/#/ITME2026";
+                window.open("https://india-itme.com/#/ITME2026", "_blank");
             } else {
                 // Open the modal if the countdown is still active
                 modal_open.classList.add("active");
