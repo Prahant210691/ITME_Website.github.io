@@ -858,8 +858,8 @@ $(".modal").on('shown.bs.modal', function() {
 document.addEventListener("DOMContentLoaded", () => {
     // Get all elements with the trigger class
     const login_btn_clicks = document.querySelectorAll(".login_btn_click");
-    const modal_open = document.getElementById("timer_Modal");
-    const close_timer_Modal = document.getElementById("close_timer_Modal");
+    const modal_open = document.getElementById("timer_Modal2");
+    const close_timer_Modal = document.getElementById("close_timer_Modal2");
 
     let countdownFinished = false; // Flag to track if the countdown has finished
 
@@ -884,10 +884,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Countdown Timer Code
-    const daysElement = document.querySelector(".days .number");
-    const hoursElement = document.querySelector(".hours .number");
-    const minutesElement = document.querySelector(".minutes .number");
-    const secondsElement = document.querySelector(".seconds .number");
+    const daysElement = document.querySelector(".days2 .number2");
+    const hoursElement = document.querySelector(".hours2 .number2");
+    const minutesElement = document.querySelector(".minutes2 .number2");
+    const secondsElement = document.querySelector(".seconds2 .number2");
 
     const targetDate = new Date("2025-02-21T12:00:00");
 
@@ -988,8 +988,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     // Get all elements with the trigger class
     const register_clicks = document.querySelectorAll(".register_click");
-    const modal_open = document.getElementById("timer_Modal");
-    const close_timer_Modal = document.getElementById("close_timer_Modal");
+    const modal_open = document.getElementById("timer_Modal1");
+    const close_timer_Modal = document.getElementById("close_timer_Modal1");
 
     let countdownFinished = false; // Flag to track if the countdown has finished
 
@@ -998,7 +998,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger.addEventListener("click", () => {
             if (countdownFinished) {
                 // Redirect if the countdown is finished
-                window.location.href = "https://itme2022.india-itme.com/";
+                window.location.href = "https://india-itme.com/#/ITME2026";
             } else {
                 // Open the modal if the countdown is still active
                 modal_open.classList.add("active");
@@ -1052,8 +1052,8 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     // Get all elements with the trigger class
     const booking_clicks = document.querySelectorAll(".booking_click");
-    const modal_open = document.getElementById("timer_Modal");
-    const close_timer_Modal = document.getElementById("close_timer_Modal");
+    const modal_open = document.getElementById("timer_Modal1");
+    const close_timer_Modal = document.getElementById("close_timer_Modal1");
 
     let countdownFinished = false; // Flag to track if the countdown has finished
 
@@ -1078,10 +1078,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Countdown Timer Code
-    const daysElement = document.querySelector(".days .number");
-    const hoursElement = document.querySelector(".hours .number");
-    const minutesElement = document.querySelector(".minutes .number");
-    const secondsElement = document.querySelector(".seconds .number");
+    const daysElement = document.querySelector(".days1 .number1");
+    const hoursElement = document.querySelector(".hours1 .number1");
+    const minutesElement = document.querySelector(".minutes1 .number1");
+    const secondsElement = document.querySelector(".seconds1 .number1");
 
     const targetDate = new Date("2025-02-21T12:00:00");
 
